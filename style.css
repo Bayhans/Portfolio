@@ -12,6 +12,8 @@
     scroll-behavior: smooth;
 }
 
+
+
 header {
     background-color:azure;
     width: 100%;
@@ -21,14 +23,15 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 200px;
+    opacity: 90%;
 }
 
 .logo {
     text-decoration: none;
     color:royalblue;
     text-transform: uppercase;
-    font-weight: 700;
-    font-size: 1.8em;
+    font-weight: 600;
+    font-size: 1.5em;
 }
 
 .navigation a {
@@ -53,7 +56,7 @@ section {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background: url(images/blueAndYellowImage.jpg) no-repeat;
+    background: url(images/betterBlueAndYellowImage.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -207,7 +210,7 @@ section {
 }
 
 .ContactCards .icon {
-    font-size: 4.5em;
+    font-size: 2em;
 }
 
 .ContactCards .info h3 {
@@ -235,6 +238,15 @@ section {
 .footer .sicialIcons {
     font-size: 1em;
     padding: 0 12px 0 0;
+}
+
+div[lang] {
+    display: none;
+}
+
+div[lang].lang-match {
+    /* background-color: cornflowerblue; */
+    display: block;
 }
 
 @media (max-width:1023px){
