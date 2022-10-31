@@ -17,8 +17,8 @@ function applyStrings(containers) {
         //console.log('looking inside of ', locale);
         container.querySelectorAll(`[data-key]`).forEach(element => {
             let key = element.getAttribute('data-key');
-            //console.log(element);
-            //console.log(key);
+            // console.log(element);
+            // console.log(key);
             let lang = locale.substr(0, 2); //first 2 characters
             if (key) {
                 element.textContent = langdata.languages[lang].strings[key];
@@ -36,7 +36,7 @@ function findLocaleMatch() {
     console.log('browser language', lang);
     console.log('locales from data file', locale);
 
-    //find the match for locale inside locales en-US nb-NO
+    //find the match for locale inside locales (en-US or nb-NO)
     let langMatch = document.documentElement.getAttribute('lang'); //default
     locales = locales.filter(l => locale == l);
     langMatch = (locales.length > 0) ? locales[0] : langMatch;
@@ -49,14 +49,14 @@ let langdata = {
             "strings": {
                 "discription": "Who writes clean, elegent and efficient code",
                 "firstBtn": "View my work",
-                "aboutMeLabel": "About me",
+                "FirstLabel": "About me"
             }
         },
         "nb": {
             "strings": {
                 "discription": "Som skriver ren, elegant og effektiv kode",
                 "firstBtn": "Se prosjektene mine",
-                "aboutMeLabel": "Om meg",
+                "FirstLabel": "Om meg"
             }
         }
     }

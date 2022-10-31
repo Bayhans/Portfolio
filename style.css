@@ -108,7 +108,7 @@ section {
     transform: scale(1.1);
 }
 
-.sicialIcons a {
+.socialIcons a {
     color: azure;
     font-size: 1.7em;
     padding-right: 30px;
@@ -235,7 +235,7 @@ section {
     color: royalblue;
 }
 
-.footer .sicialIcons {
+.footer .socialIcons {
     font-size: 1em;
     padding: 0 12px 0 0;
 }
