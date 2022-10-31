@@ -11,7 +11,7 @@
 </head>
 
 <body>
-
+    <script src="multilingual.js"></script>
     <header>
         <a href="#" class="logo">Bayan</a>
         <nav class="navigation">
@@ -22,10 +22,19 @@
     </header>
 
     <section class="main">
-        <div>
+        <div lang="en-US">
             <h2>Hello, I'm Bayan<br><span>A New Developer</span></h2>
-            <h3>Who writes clean, elegent and efficient code</h3>
-            <a href="#projects" class="mainButton">View my work</a>
+            <h3 data-key="discription">Who writes clean, elegent and efficient code</h3>
+            <a data-key="firstBtn" href="#projects" class="mainButton">View my work</a>
+            <div class="sicialIcons">
+                <a href="business@bayan.com"><i class="fa-regular fa-envelope"></i></i></a>
+                <a href="https://github.com/Bayhans"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/bayan-alghourani"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div><div lang="nb-NO">
+            <h2>Hei, jeg er Bayan<br><span>Ny Utvikler</span></h2>
+            <h3 data-key="discription">Som skriver ren, elegant og effektiv kode</h3>
+            <a data-key="firstBtn" href="#projects" class="mainButton">Se prosjektene mine</a>
             <div class="sicialIcons">
                 <a href="business@bayan.com"><i class="fa-regular fa-envelope"></i></i></a>
                 <a href="https://github.com/Bayhans"><i class="fa-brands fa-github"></i></a>
@@ -34,8 +43,15 @@
         </div>
     </section>
 
-    <section class="about" id="about">
-        <h2 class="title" id="about">About me</h2>
+    <section id="about">
+        <div  lang="en-US">
+            <h2 class="title" data-key="aboutMeLabel">About me</h2>
+        </div>
+    </section>
+    <section id="about">
+        <div lang="nb-NO">
+            <h2 class="title" data-key="aboutMeLabel">Om meg</h2>
+        </div>
     </section>
 
     <section class="projects" id="projects">
@@ -71,42 +87,6 @@
 
             <!-- here is the projects -->
 
-            <div class="projectCard">
-                <div class="projectImage">
-                    <img src="images/TaxCalculator.jpg">
-                </div>
-                <div class="projectInfo">
-                    <p class="projectService">WPF application with different tax ratio</p>
-                    <strong class="projectTitle">
-                        <span>Tax calculator</span>
-                        <a href="#" class="moreDetails">details</a>
-                    </strong>
-                </div>
-            </div>
-            <div class="projectCard">
-                <div class="projectImage">
-                    <img src="images/TaxCalculator.jpg">
-                </div>
-                <div class="projectInfo">
-                    <p class="projectService">WPF application with different tax ratio</p>
-                    <strong class="projectTitle">
-                        <span>Tax calculator</span>
-                        <a href="#" class="moreDetails">details</a>
-                    </strong>
-                </div>
-            </div>
-            <div class="projectCard">
-                <div class="projectImage">
-                    <img src="images/TaxCalculator.jpg">
-                </div>
-                <div class="projectInfo">
-                    <p class="projectService">WPF application with different tax ratio</p>
-                    <strong class="projectTitle">
-                        <span>Tax calculator</span>
-                        <a href="#" class="moreDetails">details</a>
-                    </strong>
-                </div>
-            </div>
             <div class="projectCard">
                 <div class="projectImage">
                     <img src="images/TaxCalculator.jpg">
