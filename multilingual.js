@@ -51,14 +51,25 @@ let langdata = {
             "strings": {
                 "discription": "Who writes clean, elegent and efficient code",
                 "firstBtn": "View my work",
-                "FirstLabel": "About me"
+                "firstLabel": "About me",
+                "firstDiscription":"Lorem ipsum dolor sit amet consectetur adipisicing elit Recusandae voluptatibus quia minima inventore Minima quia nihil adipisci vero. Dolorum odio iste vero debitis id, obcaecati aliquam, deleniti natus numquam ipsum delectus vel molestiae similique dicta modi",
+                "secondLabel": "Project Category",
+                "micProjectsDis":"Projects that i have been working on with .Net Platform",
+                "jsProjectsDis":"Websites that i have been making with JS",
+                "phpProjectsDis":"Projects that i have been making with PHP",
             }
         },
         "nb": {
             "strings": {
                 "discription": "Som skriver ren, elegant og effektiv kode",
                 "firstBtn": "Se prosjektene mine",
-                "FirstLabel": "Om meg"
+                "firstLabel": "Om meg",
+                "firstDiscription":"Lorem ipsum dolor sit amet consectetur adipisicing elit Recusandae voluptatibus quia minima inventore Minima quia nihil adipisci vero. Dolorum odio iste vero debitis id, obcaecati aliquam, deleniti natus numquam ipsum delectus vel molestiae similique dicta modi",
+                "secondLabel": "Prosjekt Kategori",
+                "micProjectsDis":"Prosjekter som jeg har jobbet på med .Net Platform",
+                "jsProjectsDis":"Nettsteder som jeg har laget med JS",
+                "phpProjectsDis":"Prosjekter som jeg har laget med PHP",
+
             }
         }
     }

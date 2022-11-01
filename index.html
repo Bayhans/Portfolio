@@ -43,27 +43,29 @@
         </div>
     </section>
 
-    <section>
-        <div  lang="en-EN">
-            <h1 class="title" data-key="FirstLabel">About me</h1>
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing 
+    <section id="about">
+        <div lang="en-EN">
+            <h1 class="title" data-key="firstLabel">About me</h1>
+            <p data-key="firstDiscription"> Lorem ipsum dolor sit amet consectetur adipisicing 
                 elit.Recusandae voluptatibus quia minima inventore! Minima 
                 quia nihil adipisci vero. Dolorum odio iste vero 
                 debitis id, obcaecati aliquam, deleniti natus numquam 
                 ipsum delectus vel molestiae similique dicta modi </p>
         </div>
         <div lang="nb-NO">
-            <h1 class="title" data-key="FirstLabel">Om meg</h1>
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing 
+            <h1 class="title" data-key="firstLabel">Om meg</h1>
+            <p data-key="firstDiscription"> Lorem ipsum dolor sit amet consectetur adipisicing 
                 elit.Recusandae voluptatibus quia minima inventore! Minima 
                 quia nihil adipisci vero. Dolorum odio iste vero 
                 debitis id, obcaecati aliquam, deleniti natus numquam 
                 ipsum delectus vel molestiae similique dicta modi </p>
         </div>
     </section>
-
     <section class="projects" id="projects">
-        <h1 class="title" id="projects">Projects</h1>
+
+            <!-- here is the projects in inglih -->
+    <div lang="en-EN">
+        <h1 class="title" data-key="secondLabel">Project Category</h1>
         <div class="content">
             <div class="projectCategory">
                 <div class="icon">
@@ -72,7 +74,7 @@
                 </div>
                 <div class="info">
                     <h2>.NET Platform</h3>
-                    <p>Projects that i have been working on with .Net Platform</p>
+                    <p data-key="micProjectsDis">Projects that i have been working on with .Net Platform</p>
                 </div>
             </div>
             <div class="projectCategory">
@@ -82,7 +84,7 @@
                 </div>
                 <div class="info">
                     <h2>Java Script</h2>
-                    <p>Websites that i have been making with JS</p>
+                    <p data-key="jsProjectsDis">Websites that i have been making with JS</p>
                 </div>
             </div>
             <div class="projectCategory">
@@ -92,15 +94,52 @@
                 </div>
                 <div class="info">
                     <h2>PHP Frameworks</h2>
-                    <p>Projects that i have been making with PHP</p>
+                    <p data-key="phpProjectsDis">Projects that i have been making with PHP</p>
                 </div>
             </div>
         </div>
+    </div>
+            <!-- here is the projects in norsk -->
+    <div lang="nb-NO">
+        <h1 class="title" data-key="secondLabel">Prosjekt Kategori</h1>
+        <div class="content">
+            <div class="projectCategory">
+                <div class="icon">
+                    <i class="fa-brands fa-microsoft"
+                    style="color: #1a0dab;"></i>
+                </div>
+                <div class="info">
+                    <h2>.NET Platform</h3>
+                    <p data-key="micProjectsDis">Projects that i have been working on with .Net Platform</p>
+                </div>
+            </div>
+            <div class="projectCategory">
+                <div class="icon">
+                    <i class="fa-brands fa-square-js"
+                    style="color: #fcdc00;"></i>
+                </div>
+                <div class="info">
+                    <h2>Java Script</h2>
+                    <p data-key="jsProjectsDis">Websites that i have been making with JS</p>
+                </div>
+            </div>
+            <div class="projectCategory">
+                <div class="icon">
+                    <i class="fa-brands fa-php"
+                    style="color: #7A86B8;"></i>
+                </div>
+                <div class="info">
+                    <h2>PHP Frameworks</h2>
+                    <p data-key="phpProjectsDis">Projects that i have been making with PHP</p>
+                </div>
+            </div>
+        </div>
+    </div>
     </section>
 
             <!-- here is the projects -->
 
-    <section class="projects" id="projects">
+    <section class="projects">
         <h1 class="title" id="projects">Projects</h1>
         <div class="content">
             <div class="projectCard">
