@@ -6,8 +6,10 @@
     applyStrings(zones);
 
     let lang = findLocaleMatch();
-    let container = document.querySelector(`html [lang*=${lang}]`);
+    const containers = document.querySelectorAll(`html [lang*=${lang}]`);
+    containers.forEach( container => {
     container.className = 'lang-match';
+})
 });
 
 function applyStrings(containers) {
