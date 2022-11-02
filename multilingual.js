@@ -58,6 +58,7 @@ let langdata = {
                 "jsProjectsDis":"Websites that i have been making with JS",
                 "phpProjectsDis":"Projects that i have been making with PHP",
                 "letsWorkTitle":"Let's work together",
+                "projectsTitle":"Projects",
             }
         },
         "nb": {
@@ -71,6 +72,8 @@ let langdata = {
                 "jsProjectsDis":"Nettsider som jeg har laget med JS",
                 "phpProjectsDis":"Prosjekter som jeg har laget med PHP",
                 "letsWorkTitle":"La oss jobbe sammen",
+                "projectsTitle":"Prosjektene",
+                
             }
         }
     }
