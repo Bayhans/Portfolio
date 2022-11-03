@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Arima:wght@100;200;300;400;500;600;700&family=Coiny&family=Raleway+Dots&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Zen+Dots&display=swap');
 
 * {
-    font-family: 'Raleway', sans-serif;
+    /* font-family: 'Raleway', sans-serif; */
+    /* font-family: 'Coiny', cursive; */
     font-family: 'Arima', cursive;
-    font-family: 'Coiny', cursive;
     font-family: 'Zen Dots', cursive;
 
     margin: 0;
@@ -47,8 +47,7 @@ header {
 }
 
 section {
-    font-family: 'Coiny', cursive;
-    padding: 4em 5em;
+    padding: 5em;
 }
 
 .main {
@@ -125,24 +124,26 @@ section {
 
 .content {
     display: flex;
-    justify-content:space-evenly;
+    justify-content: center;
     flex-direction: row;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
 }
 
-.projectCategory {
+.projectCategoryCard {
     box-shadow: 0 5px 25px rgba(1 1 1 / 25%);
     border-radius: 10px;
+    max-width: 15em;
+    max-height: 15em;
     padding: 1em;
-    margin: .5rem;
+    margin: 1em;
     transition: 0.7s ease;
 }
 
-.projectCategory a {
+.projectCategoryCard a {
     text-decoration: none;
     color: #000;
 }
-.projectCategory:hover {
+.projectCategoryCard:hover {
     transform: scale(1.1);
 }
 
@@ -153,29 +154,39 @@ section {
 
 .info {
     text-align: center;
+    text-orientation: initial;
 }
 
 .info h2{
     font-size: 1.2rem;
     font-weight: 700;
-    margin: 1rem;
+    margin: .5rem;
 }
 
 .info p{
     font-family: 'Raleway' , cursive;
-    font-size: 1rem;
-    font-weight: 400;
+    font-size: .8rem;
+    font-weight: 500;
 }
 
-.projects .content {
-    margin-top: 3em;
+.projectsSection{
+    background: url(images/darkPurpleAndBlueImage.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
 }
 
 .projectCard {
     background-color: azure;
-    border: 3px solid azure;
-    min-height: 14em;
-    width: 18em;
+    border: .5em solid azure;
+    margin: 1em;
+    max-height: 18em;
+    width: 15em;
     overflow: hidden;
     border-radius: 10px;
     transition: 0.7s ease;
@@ -186,7 +197,7 @@ section {
 }
 
 .projectCard:hover .projectImage{
-    opacity: 0.9;
+    opacity: .9;
 }
 
 .projectImage img {
@@ -194,13 +205,14 @@ section {
 }
 
 .projectService {
-    font-size: 0.8em;
+    font-size: .7em;
 }
 
 .projectTitle {
     display: flex;
     justify-content: space-between;
     text-transform: uppercase;
+    font-size: .8em;
     font-weight: 800;
     margin-top: 1em;
 }
@@ -212,6 +224,7 @@ section {
 .moreDetails:hover {
     color: chocolate;
 }
+
 
 .ContactCards .icon {
     font-size: 2em;
@@ -255,45 +268,69 @@ div[lang].lang-match {
 
 @media (max-width:1023px){
     header{
-        padding: 1.2em 2em;
+        padding: 1.5em 2em;
     }
-
     .navigation{
         padding-left: 1em;
     }
     .title{
-        font-size: 1.8em;
+        font-size: 1.8rem;
     }
     section{
-        padding: 6em 2em;
+        padding: 5em 2em;
     }
     .main h1 {
-        font-size: 1em;
+        font-size: 1rem;
     }
     .main h2 {
-        font-size: 1.6em;
+        font-size: 1.6rem;
     }
     .content{
         flex-direction: column;
         align-items: center;
     }
+    .projectCard {
+        transition: 0.4s ease;
+    }
+    .projectTitle {
+        justify-content: space-evenly;
+        font-size: .7rem;
+        font-weight: 600;
+        margin-top: .5em;
+    }
 }
 
-@media (max-width:641px){
+@media (max-width:600px){
     body{
         font-size: 1.1rem;
     }
-
     .main h1 {
-        font-size: 0.8em;
+        font-size: 0.8rem;
     }
     .main h2 {
-        font-size: 1.4em;
+        font-size: 1.4rem;
     }
+    .projectTitle {
+        justify-content: space-evenly;
+        font-size: .6rem;
+        font-weight: 500;
+    }
+
 }
 
 @media (max-width:300px){
     body{
         font-size: .8rem;
+    }
+    .main h1 {
+        font-size: 0.5rem;
+    }
+    .main h2 {
+        font-size: 1.1rem;
+    }
+    .projectTitle {
+        justify-content: space-evenly;
+        font-size: .4rem;
+        font-weight: 400;
     }
 }

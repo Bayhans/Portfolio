@@ -14,11 +14,20 @@
     <script src="multilingual.js"></script>
     <header>
         <a href="#" class="logo">Bayan</a>
-        <nav class="navigation">
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
+        <div lang="en-EN">
+            <nav class="navigation">
+                <a data-key="aboutNav" href="#about">About</a>
+                <a data-key="projectsNav" href="#projects">Projects</a>
+                <a data-key="contactNav" href="#contact">Contact</a>
+            </nav>
+        </div><div lang="nb-NO">
+            <nav class="navigation">
+                <a data-key="aboutNav" href="#about">OM Meg</a>
+                <a data-key="projectsNav" href="#projects">Prosjekter</a>
+                <a data-key="contactNav" href="#contact">Kontakt</a>
+            </nav>
+        </div>
+
     </header>
 
     <section class="main">
@@ -61,115 +70,150 @@
                 ipsum delectus vel molestiae similique dicta modi </p>
         </div>
     </section>
-    <section class="projects" id="projects">
+    <section  id="projects">
 
-            <!-- here is the projects in inglih -->
-    <div lang="en-EN">
-        <h1 class="title" data-key="secondLabel">Project Category</h1>
-        <div class="content">
-            <div class="projectCategory">
-                <div class="icon">
-                    <i class="fa-brands fa-microsoft"
-                    style="color: #1a0dab;"></i>
+            <!-- here is the projects category in inglih -->
+        <div lang="en-EN">
+            <h1 class="title" data-key="secondLabel">Project Category</h1>
+            <div class="content">
+                <div class="projectCategoryCard">
+                    <div class="icon">
+                        <i class="fa-brands fa-microsoft"
+                        style="color: #1a0dab;"></i>
+                    </div>
+                    <div class="info">
+                        <h2>.NET Platform</h3>
+                        <p data-key="micProjectsDis">Projects that i have been working on with .Net Platform</p>
+                    </div>
                 </div>
-                <div class="info">
-                    <h2>.NET Platform</h3>
-                    <p data-key="micProjectsDis">Projects that i have been working on with .Net Platform</p>
+                <div class="projectCategoryCard">
+                    <div class="icon">
+                        <i class="fa-brands fa-square-js"
+                        style="color: #fcdc00;"></i>
+                    </div>
+                    <div class="info">
+                        <h2>Java Script</h2>
+                        <p data-key="jsProjectsDis">Websites that i have been making with JS</p>
+                    </div>
                 </div>
-            </div>
-            <div class="projectCategory">
-                <div class="icon">
-                    <i class="fa-brands fa-square-js"
-                    style="color: #fcdc00;"></i>
-                </div>
-                <div class="info">
-                    <h2>Java Script</h2>
-                    <p data-key="jsProjectsDis">Websites that i have been making with JS</p>
-                </div>
-            </div>
-            <div class="projectCategory">
-                <div class="icon">
-                    <i class="fa-brands fa-php"
-                    style="color: #7A86B8;"></i>
-                </div>
-                <div class="info">
-                    <h2>PHP Frameworks</h2>
-                    <p data-key="phpProjectsDis">Projects that i have been making with PHP</p>
-                </div>
-            </div>
-        </div>
-    </div>
-            <!-- here is the projects in norsk -->
-    <div lang="nb-NO">
-        <h1 class="title" data-key="secondLabel">Prosjekt Kategori</h1>
-        <div class="content">
-            <div class="projectCategory">
-                <div class="icon">
-                    <i class="fa-brands fa-microsoft"
-                    style="color: #1a0dab;"></i>
-                </div>
-                <div class="info">
-                    <h2>.NET Rammeverk</h3>
-                    <p data-key="micProjectsDis">Prosjektene som jeg har jobbet på med .Net Platform</p>
-                </div>
-            </div>
-            <div class="projectCategory">
-                <div class="icon">
-                    <i class="fa-brands fa-square-js"
-                    style="color: #fcdc00;"></i>
-                </div>
-                <div class="info">
-                    <h2>Java Script</h2>
-                    <p data-key="jsProjectsDis">Nettsider som jeg har laget med JS</p>
-                </div>
-            </div>
-            <div class="projectCategory">
-                <div class="icon">
-                    <i class="fa-brands fa-php"
-                    style="color: #7A86B8;"></i>
-                </div>
-                <div class="info">
-                    <h2>PHP Rammeverk</h2>
-                    <p data-key="phpProjectsDis">Prosjektene som jeg har laget med PHP</p>
+                <div class="projectCategoryCard">
+                    <div class="icon">
+                        <i class="fa-brands fa-php"
+                        style="color: #7A86B8;"></i>
+                    </div>
+                    <div class="info">
+                        <h2>PHP Frameworks</h2>
+                        <p data-key="phpProjectsDis">Projects that i have been making with PHP</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+                <!-- here is the projects category in norsk -->
+        <div lang="nb-NO">
+            <h1 class="title" data-key="secondLabel">Prosjekt Kategori</h1>
+            <div class="content">
+                <div class="projectCategoryCard">
+                    <div class="icon">
+                        <i class="fa-brands fa-microsoft"
+                        style="color: #1a0dab;"></i>
+                    </div>
+                    <div class="info">
+                        <h2>.NET Rammeverk</h3>
+                        <p data-key="micProjectsDis">Prosjektene som jeg har jobbet på med .Net Platform</p>
+                    </div>
+                </div>
+                <div class="projectCategoryCard">
+                    <div class="icon">
+                        <i class="fa-brands fa-square-js"
+                        style="color: #fcdc00;"></i>
+                    </div>
+                    <div class="info">
+                        <h2>Java Script</h2>
+                        <p data-key="jsProjectsDis">Nettsider som jeg har laget med JS</p>
+                    </div>
+                </div>
+                <div class="projectCategoryCard">
+                    <div class="icon">
+                        <i class="fa-brands fa-php"
+                        style="color: #7A86B8;"></i>
+                    </div>
+                    <div class="info">
+                        <h2>PHP Rammeverk</h2>
+                        <p data-key="phpProjectsDis">Prosjektene som jeg har laget med PHP</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-            <!-- here is the projects -->
+        <!-- here is the projects -->
 
-    <section class="projects">
         <div lang="en-EN">
             <h1 class="title" data-key="projectsTitle" id="projects">Projects</h1>
         </div>
         <div lang="nb-NO">
             <h1 class="title" data-key="projectsTitle" id="projects">Prosjektene</h1>
         </div>
-        <div class="content">
-            <div class="projectCard">
-                <div class="projectImage">
-                    <img src="images/TaxCalculator.jpg">
-                </div>
-                <div class="projectInfo">
-                    <p class="projectService">WPF application with different tax ratio</p>
-                    <strong class="projectTitle">
-                        <span>Tax calculator</span>
-                        <a href="https://github.com/Bayhans/TheTaxCalculator" class="moreDetails">details</a>
-                    </strong>
-                </div>
+    
+    <section class="projectsSection">
+        <div class="projectCard">
+            <div class="projectImage">
+                <img src="images/TaxCalculator.jpg">
             </div>
-            <div class="projectCard">
-                <div class="projectImage">
-                    <img src="images/TaxCalculator.jpg">
-                </div>
-                <div class="projectInfo">
-                    <p class="projectService">WPF application with different tax ratio</p>
-                    <strong class="projectTitle">
-                        <span>Tax calculator</span>
-                        <a href="#" class="moreDetails">details</a>
-                    </strong>
-                </div>
+            <div class="projectInfo">
+                <p class="projectService">WPF application will calculate the tax values for a product with different tax ratio</p>
+                <strong class="projectTitle">
+                    <span>Tax calculator</span>
+                    <a href="https://github.com/Bayhans/TheTaxCalculator" class="moreDetails">details</a>
+                </strong>
+            </div>
+        </div>
+        <div class="projectCard">
+            <div class="projectImage">
+                <img src="images/TaxCalculator.jpg">
+            </div>
+            <div class="projectInfo">
+                <p class="projectService">WPF application will calculate the tax values for a product with different tax ratio</p>
+                <strong class="projectTitle">
+                    <span>Tax calculator</span>
+                    <a href="https://github.com/Bayhans/TheTaxCalculator" class="moreDetails">details</a>
+                </strong>
+            </div>
+        </div>
+        <div class="projectCard">
+            <div class="projectImage">
+                <img src="images/TaxCalculator.jpg">
+            </div>
+            <div class="projectInfo">
+                <p class="projectService">WPF application will calculate the tax values for a product with different tax ratio</p>
+                <strong class="projectTitle">
+                    <span>Tax calculator</span>
+                    <a href="https://github.com/Bayhans/TheTaxCalculator" class="moreDetails">details</a>
+                </strong>
+            </div>
+        </div>
+        <div class="projectCard">
+            <div class="projectImage">
+                <img src="images/TaxCalculator.jpg">
+            </div>
+            <div class="projectInfo">
+                <p class="projectService">WPF application will calculate the tax values for a product with different tax ratio</p>
+                <strong class="projectTitle">
+                    <span>Tax calculator</span>
+                    <a href="https://github.com/Bayhans/TheTaxCalculator" class="moreDetails">details</a>
+                </strong>
+            </div>
+        </div>
+        <div class="projectCard">
+            <div class="projectImage">
+                <img src="images/TaxCalculator.jpg">
+            </div>
+            <div class="projectInfo">
+                <p class="projectService">WPF application will calculate the tax values for a product with different tax ratio</p>
+                <strong class="projectTitle">
+                    <span>Tax calculator</span>
+                    <a href="https://github.com/Bayhans/TheTaxCalculator" class="moreDetails">details</a>
+                </strong>
             </div>
         </div>
     </section>
@@ -183,7 +227,7 @@
         </div>
 
         <div class="content">
-            <div class="projectCategory"
+            <div class="projectCategoryCard"
                 onclick="window.location='tel:004748623552';">
                 <div class="icon">
                     <i class="fa-solid fa-phone"></i>
@@ -193,7 +237,7 @@
                     <a>+47-48623550</a>
                 </div> 
             </div>
-            <div class="projectCategory" 
+            <div class="projectCategoryCard" 
                 onclick="window.location='http://bayan.kodehode@gmail.com';">
                 <div class="icon">       
                     <i class="fa-regular fa-envelope"></i>
@@ -218,6 +262,6 @@
 
 
 <!-- 
-<a href="/images/myw3schoolsimage.jpg" download="w3logo">
-    <img src="/images/myw3schoolsimage.jpg" alt="W3Schools">
-  </a> -->
+<a href="/CV-Bayan Alghourani.pdf" download="CV-Bayan">
+    <img src="/images/CV-Image.jpg" alt="CV">
+</a> -->
