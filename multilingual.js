@@ -53,27 +53,32 @@ let langdata = {
                 "firstBtn": "View my work",
                 "firstLabel": "About me",
                 "firstDiscription":"Lorem ipsum dolor sit amet consectetur adipisicing elit Recusandae voluptatibus quia minima inventore Minima quia nihil adipisci vero. Dolorum odio iste vero debitis id, obcaecati aliquam, deleniti natus numquam ipsum delectus vel molestiae similique dicta modi",
-                "secondLabel": "Project Category",
+                "secondLabel": "Category",
                 "micProjectsDis":"Projects that i have been working on with .Net Platform",
                 "jsProjectsDis":"Websites that i have been making with JS",
                 "phpProjectsDis":"Projects that i have been making with PHP",
                 "letsWorkTitle":"Let's work together",
                 "projectsTitle":"Projects",
+                "aboutNav":"About",
+                "projectsNav":"Projects",
+                "contactNav":"Contact",
             }
         },
         "nb": {
             "strings": {
                 "discription": "Som skriver ren, elegant og effektiv kode",
                 "firstBtn": "Se prosjektene mine",
-                "firstLabel": "Om meg",
+                "firstLabel": "Om Meg",
                 "firstDiscription":"Lorem ipsum dolor sit amet consectetur adipisicing elit Recusandae voluptatibus quia minima inventore Minima quia nihil adipisci vero. Dolorum odio iste vero debitis id, obcaecati aliquam, deleniti natus numquam ipsum delectus vel molestiae similique dicta modi",
-                "secondLabel": "Prosjekt Kategori",
+                "secondLabel": "Kategorier",
                 "micProjectsDis":"Prosjekter som jeg har jobbet på med .Net Platform",
                 "jsProjectsDis":"Nettsider som jeg har laget med JS",
                 "phpProjectsDis":"Prosjekter som jeg har laget med PHP",
                 "letsWorkTitle":"La oss jobbe sammen",
                 "projectsTitle":"Prosjektene",
-                
+                "aboutNav":"OM Meg",
+                "projectsNav":"Prosjekter",
+                "contactNav":"Kontakt",
             }
         }
     }

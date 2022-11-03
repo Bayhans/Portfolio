@@ -12,8 +12,6 @@
     scroll-behavior: smooth;
 }
 
-
-
 header {
     background-color:azure;
     width: 100%;
@@ -22,7 +20,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 200px;
+    padding: 1em 2em;
     opacity: 90%;
 }
 
@@ -39,7 +37,7 @@ header {
     text-decoration: none;
     font-size: 1.1em;
     font-weight: 500;
-    padding-left: 30px;
+    padding-left: 1em;
 }
 
 .navigation a:hover {
@@ -268,11 +266,13 @@ div[lang].lang-match {
 
 @media (max-width:1023px){
     header{
-        padding: 1.5em 2em;
+        font-size: 1rem;
+        
     }
     .navigation{
-        padding-left: 1em;
+        padding-left: 3em;
     }
+
     .title{
         font-size: 1.8rem;
     }
@@ -319,6 +319,10 @@ div[lang].lang-match {
 }
 
 @media (max-width:300px){
+    header{
+        font-size: .8rem;
+    }
+    
     body{
         font-size: .8rem;
     }
@@ -330,7 +334,10 @@ div[lang].lang-match {
     }
     .projectTitle {
         justify-content: space-evenly;
-        font-size: .4rem;
+        font-size: .6rem;
         font-weight: 400;
+    }
+    .projectService{
+        font-size: .6rem;
     }
 }
