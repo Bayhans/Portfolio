@@ -1,6 +1,6 @@
 
   //apply the language values to the content
-  document.addEventListener('DOMContentLoaded', () => {
+    document.addEventListener('DOMContentLoaded', () => {
     //skip the lang value in the HTML tag for this example
     let zones = document.querySelectorAll('html [lang]');
     applyStrings(zones);

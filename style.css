@@ -1,19 +1,47 @@
 @import url('https://fonts.googleapis.com/css2?family=Arima:wght@100;200;300;400;500;600;700&family=Coiny&family=Raleway+Dots&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Zen+Dots&display=swap');
 
+:root{
+    --white:#fff;
+    --black:#222;
+}
+
 * {
     /* font-family: 'Raleway', sans-serif; */
     /* font-family: 'Coiny', cursive; */
     font-family: 'Arima', cursive;
     font-family: 'Zen Dots', cursive;
 
-    margin: 0;
-    padding: 0;
+    margin: 0; padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    transition: .2s linear;
+
+}
+
+body.dark{
+    --white:#222;
+    --black:#fff;
+}
+
+#toggle-btn{
+    margin: 1em;
+    height: 2em;
+    width: 2em;
+    line-height: 2em;
+    border-radius: 50%;
+    background-color: var(--white);
+    color:var(--black);
+    font-size: 1.5rem;
+    cursor: pointer;
+    text-align: center;
+}
+
+#toggle-btn.fa-moon{
+transform: rotate(360deg);
 }
 
 header {
-    background-color:azure;
+    background-color: var(--white);
     width: 100%;
     position: fixed;
     z-index: 100;
@@ -61,7 +89,7 @@ section {
 
 .main h1 {
     font-family: 'Arima', cursive;
-    color:azure;
+    color: var(--white);
     font-size: 1.4em;
     font-weight: 600;
 }
@@ -69,14 +97,14 @@ section {
     font-family: 'Arima', cursive;
     display: inline-block;
     margin-top: 10px;
-    color:azure;
+    color: var(--white);
     font-size: 3em;
     font-weight: 600;
 }
 
 .main h2 {
     font-family: 'Arima', cursive;
-    color: azure;
+    color: var(--white);
     font-size: 2em;
     font-weight: 700;
     letter-spacing: 1px;
@@ -86,8 +114,8 @@ section {
 
 .mainButton {
     font-family: 'Arima', cursive;
-    color: #000;
-    background-color: azure;
+    color: var(--black);
+    background-color: var(--white);
     text-decoration: none;
     font-size: 1.1em;
     font-weight: 600;
@@ -100,13 +128,13 @@ section {
 }
 
 .mainButton:hover {
-    color: azure;
-    background-color: #000;
+    color: var(--white);
+    background-color: var(--black);
     transform: scale(1.1);
 }
 
 .socialIcons a {
-    color: azure;
+    color: var(--white);
     font-size: 1.7em;
     padding-right: 30px;
 }
@@ -121,6 +149,7 @@ section {
 }
 
 .content {
+    color: var(--black);
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -128,6 +157,7 @@ section {
 }
 
 .projectCategoryCard {
+    background-color: var(--white);
     box-shadow: 0 5px 25px rgba(1 1 1 / 25%);
     border-radius: 10px;
     max-width: 15em;
@@ -139,7 +169,7 @@ section {
 
 .projectCategoryCard a {
     text-decoration: none;
-    color: #000;
+    color: var(--white);
 }
 .projectCategoryCard:hover {
     transform: scale(1.1);
@@ -180,8 +210,8 @@ section {
 }
 
 .projectCard {
-    background-color: azure;
-    border: .5em solid azure;
+    background-color: var(--white);
+    border: .5em solid var(--white);
     margin: 1em;
     max-height: 18em;
     width: 15em;
@@ -203,10 +233,12 @@ section {
 }
 
 .projectService {
+    color: var(--black);
     font-size: .7em;
 }
 
 .projectTitle {
+    color: var(--black);
     display: flex;
     justify-content: space-between;
     text-transform: uppercase;
@@ -227,14 +259,13 @@ section {
 .ContactCards .icon {
     font-size: 2em;
 }
-
-.ContactCards .info h2 {
-    color: #000;
+.ContactCards a {
+    transition: .2s linear;
+    color: var(--black);
 }
-
 .footer {
-    background-color: #000;
-    color: #fff;
+    background-color: var(--black);
+    color: var(--white);
     padding: 2em;
     display: flex;
     justify-content:space-between;
@@ -267,8 +298,8 @@ div[lang].lang-match {
 @media (max-width:1023px){
     header{
         font-size: 1rem;
-        
     }
+    
     .navigation{
         padding-left: 3em;
     }
@@ -321,6 +352,9 @@ div[lang].lang-match {
 @media (max-width:300px){
     header{
         font-size: .8rem;
+    }
+    #toggle-btn{
+        font-size: 1rem;
     }
     
     body{
