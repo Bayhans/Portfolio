@@ -214,8 +214,8 @@ section {
     background-color: var(--white);
     border: .5em solid var(--white);
     margin: 1em;
-    max-height: 18em;
-    width: 15em;
+    max-height: 25em;
+    width: 20em;
     overflow: hidden;
     border-radius: 10px;
     transition: 0.7s ease;
@@ -235,7 +235,7 @@ section {
 
 .projectService {
     color: var(--black);
-    font-size: .7em;
+    font-size: .7rem;
 }
 
 .projectTitle {
@@ -243,12 +243,13 @@ section {
     display: flex;
     justify-content: space-between;
     text-transform: uppercase;
-    font-size: .8em;
+    font-size: 1rem;
     font-weight: 800;
     margin-top: .5em;
 }
 
 .moreDetails {
+    color: var(--black);
     text-decoration: none;
 }
 
