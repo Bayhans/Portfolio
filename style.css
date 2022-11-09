@@ -24,7 +24,7 @@ body.dark{
 }
 
 #toggle-btn{
-    margin: 1em;
+    padding-left: 1em;
     height: 2em;
     width: 2em;
     line-height: 2em;
@@ -46,13 +46,14 @@ header {
     position: fixed;
     z-index: 100;
     display: flex;
-    justify-content: space-between;
+    justify-content: row;
     align-items: center;
     padding: 1em 2em;
     opacity: 90%;
 }
 
 .logo {
+    padding-right: 60vw;
     text-decoration: none;
     color:royalblue;
     text-transform: uppercase;
@@ -295,11 +296,24 @@ div[lang].lang-match {
     display: block;
 }
 
-@media (max-width:1023px){
+@media (max-width:1450px){
+    .logo{
+        padding-right: 45vw;
+    }
+    
+}
+/* @media (max-width:1170px){
+    .logo{
+        padding-right: 40vw;
+    }
+} */
+@media (max-width:1060px){
     header{
         font-size: 1rem;
     }
-    
+    .logo{
+    padding-right: 25vw;
+    }
     .navigation{
         padding-left: 3em;
     }
@@ -335,6 +349,12 @@ div[lang].lang-match {
     body{
         font-size: 1.1rem;
     }
+    .logo{
+        padding-right: 20vw;
+    }
+    header{
+        font-size: .8rem;
+    }
     .main h1 {
         font-size: 0.8rem;
     }
@@ -349,14 +369,16 @@ div[lang].lang-match {
 
 }
 
-@media (max-width:300px){
-    header{
-        font-size: .8rem;
-    }
+@media (max-width:400px){
     #toggle-btn{
         font-size: 1rem;
     }
-    
+    header{
+        padding: .5em;
+    }
+    .logo{
+        padding-right: 15vw;
+    }
     body{
         font-size: .8rem;
     }
